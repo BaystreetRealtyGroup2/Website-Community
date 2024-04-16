@@ -1,1 +1,1178 @@
+<style>
+.bg-video {
+	 position: absolute;
+	 height: 100vh;
+	 width: 100%;
+	 z-index: -1;
+	 overflow: hidden;
+}
+ .bg-video__content {
+	 height: 100%;
+	 width: 100%;
+	 object-fit: cover;
+}
+ .video {
+	 height: 100vh;
+	 text-align: center;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.video .headline {
+	 font-size: 48px;
+	 text-transform: uppercase;
+	 background-color: transparent;
+   color: #fff;
+}
+ .video .blur-edges {
+	 background: rgba(0, 0, 0, 0.2  );
+	 height: 100%;
+	 width: 100%;
+	 z-index: 0;
+	 position: absolute;
+}
+ .footer-inner {
+    max-width: 1280px;
+    margin: auto;
+}
+.content-title.header-secondary {
+    display: none;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12,.col-sm-12,.col-sm-123, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 1px !important;
+    padding-right: 5px;
+    padding-left: 5px;
+}
 
+.container {
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 992px) {
+.col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  } }
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 992px){
+.col-lg-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  } }
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col {    -ms-flex-preferred-size: 0;    flex-basis: 0;    -webkit-box-flex: 1;    -ms-flex-positive: 1;    flex-grow: 1;    max-width: 100%;}
+
+@media (min-width: 768px) {
+.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+} }
+
+body:not(.header-transparent) .main {padding-top: 0px !important;}
+.main {padding-top: 0px !important;}
+.inner-main-content {
+    padding-top: 0px !important;
+}
+@media (min-width: 1200px) {
+.container, .map-filter-wrapper {
+    max-width: 100% !important;
+}
+.col-md-4.col-lg-4  {
+  display:none;
+  } }
+.col-md-4.col-lg-4 {
+  display:none;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    background-color: #fff;
+    padding: 5rem 0 9rem 0;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9rem;
+    align-items: center;
+
+
+
+}
+
+.primary-heading {
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+}
+
+.hero-inf {
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 1.2rem 1.2rem;
+    border-radius: 5px;
+    transition: all 1s;
+
+}
+
+.btn--on:link,
+.btn--on:visited {
+    background-color: #005D7D;
+    color: white;
+
+}
+
+.btn--on:hover,
+.btn--on:active {
+   background-color: #000;
+   color: #fff;
+
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(185, 94, 15, 0.5);
+    border-radius: 5px;
+}
+
+.right {
+    margin-right: 2rem !important;
+}
+
+.btn--off:link,
+.btn--off:visited {
+    background-color: white;
+    color: #555;
+}
+
+.btn--off:hover,
+.btn--off:active {
+    background-color: #000;
+    box-shadow: inset 0 0 0 3px white;
+}
+
+
+.hero-img {
+    width: 100%;
+}
+
+@media (max-width:84em) {
+    .hero {
+        max-width: 120rem;
+    }
+
+    .primary-heading {
+        font-size: 4.2rem;
+    }
+}
+
+@media (max-width:75em) {
+
+
+    .Grid {
+        gap: 5rem;
+    }
+
+    .hero {
+        gap: 6.4rem;
+    }
+
+    .nav-list {
+        gap: 3rem;
+    }
+
+}
+
+@media (max-width:66.25em) {
+    .btn-form {
+        margin-top: 4.5rem;
+    }
+}
+
+@media (max-width:62em) {
+
+
+    .btn-form {
+        margin-top: 2.6rem;
+    }
+}
+
+
+@media (max-width:59em) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 9rem;
+        gap: 5rem
+    }
+  
+    .hero-img {
+        width: 60%;
+    }
+
+    .hero-text-box,
+    .hero-img-box {
+        text-align: center;
+    }
+
+    .cta-box {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+
+        grid-template-columns: 1fr;
+    }
+
+    .btn-form {
+        margin-top: 1.2rem;
+    }
+
+    .btn-mobile-nav {
+        display: block;
+    }
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}
+
+@media (max-width:32em) {
+
+    .Container {
+        padding: 0 3rem;
+    }
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    .Grid {
+        gap: 4.8rem;
+    }
+
+    .grid-2-column,
+    .grid-3-column,
+    .grid-4-column {
+        grid-template-columns: 1fr;
+    }
+   .primary-heading {
+        font-size: 2.2rem;
+    }
+    .hero {
+        padding: 0 1rem;
+        display: inline-block;
+          max-width: 100%;
+    }
+
+    .hero-img {
+        width: 88%;
+    }
+.hero-img-box {
+        margin-top: 20px;
+    }
+    .logos {
+        gap: 1.2rem;
+    }
+
+    .logos img {
+        height: 1.2rem;
+    }
+
+    .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step-img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .step-img-box {
+        transform: translateY(3.2rem);
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2rem;
+    }
+
+    .cta-box {
+        grid-template-columns: 1fr;
+
+    }
+
+    .cta-img {
+        height: 36rem;
+        grid-row: 1;
+    }
+
+    .cta-text-box {
+        padding: 3.2rem;
+    }
+}
+
+@media (max-width:19em) {
+
+
+    .logos {
+        gap: 1rem;
+    }
+
+    .logos img {
+        height: 1.4rem;
+    }
+}
+
+***************************
+
+/* For Safari ,  FireFox */
+*************************** .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+    margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+    margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+    margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+    margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+    margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+    margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+        margin-right: 3.2rem;
+    }
+}
+
+@media (max-width: 59em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 4.8rem;
+    }
+}
+ul {
+      list-style-position: inside !important;
+    padding-left: 0px;
+    list-style: none;
+}
+
+
+/* New */ 
+
+/* container style */
+
+.yeet {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  grid-gap: 40px;
+  margin: 35px 0;
+}
+.abouttext {
+  width:60%;
+  margin: 35px 0;
+  font-size:1.2em;
+}
+/* About Us */
+h3.fw-600 {
+    margin-top: 30px;
+}
+.row.one-column {
+margin: 0 !important
+}
+.row.one-column img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.2rem;
+    filter: brightness(21%);
+    -webkit-filter: brightness(21%);
+}
+.row.one-column .row-column-content {
+   position: relative;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    transform: translatey(-50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.row.one-column .row-column-content h3 {
+  font-size: 2.1rem;
+}
+.row.one-column .row-column-content p {
+  font-size: 1.1rem;
+}
+
+.col-sm-12 {
+  min-height:800px !important;
+}
+.col-sm-123 {
+  min-height:1000px !important;
+}
+
+/* Ammenities Us */
+
+.row.one-column {
+margin: 0 !important
+}
+.row.one-column img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.2rem;
+    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+}
+.row.one-column .row-column-content2 {
+   position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    transform: translatey(-50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+.row.one-column .row-column-content2 h3 {
+  font-size: 2.1rem;
+}
+.row.one-column .row-column-content2 p {
+  font-size: 1.1rem;
+}
+
+.backgroundimg {
+    background-image: url(https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1685994125_2zPFHTtKfz2EYFrGm9gKYOFD2RdGTFi6oJC1sXkD.png);
+    background-size: 11%;
+    border: #e6e6e6;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+  background-repeat: repeat;
+}
+
+
+***************************
+
+/* FAQ */
+*************************** 
+.faq-section {
+    min-height: 100vh;
+    padding: 10vh 0 0;
+
+}
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+  margin-top:100px;
+
+}
+.faq-title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #005D7D;
+    bottom: -25px;
+    margin-left: -30px;
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: bold;
+
+}
+
+.faq {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(0, 93, 125, 0.1);
+    padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  color: #3B566E;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+.container22 {
+    width: 750px;
+    margin: auto;
+    max-width: 100%;
+    min-width: 50%;
+ 
+}
+
+  p {
+    font-size: 1.25em;
+
+}
+section.faq-section {
+    padding-bottom: 130px;
+}
+
+
+/* Image Grid */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+
+
+
+***************************
+
+/*top 11 */
+*************************** 
+
+.container34 > * {
+  background-color: #fff;
+  border: .01em solid grey;
+  color: black;
+  padding: 1em; 
+  margin: 10px;
+}
+a.btn.btn--on.right {
+    margin-top: 20px;
+}
+.container34 {
+  display: grid;
+  grid-template-areas:
+  "title"
+  "description"
+  "button"
+   ;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2em;
+  width: 100%;
+  margin: auto;
+  max-width: 1450px;
+      padding-left: 20px;
+    padding-right: 20px;
+}
+
+.level:hover {
+box-shadow: 1px 2px 3px 0px rgba(25,25,25,0.6);
+opacity: 1;
+transition:all 0.5s ease;  
+}
+.primary-heading2 {
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    margin-bottom: 3rem;
+   text-align: center;
+      margin-top: 3rem;
+}
+.hero-img2 {
+  width:200px;
+  
+}
+.alignme {
+    margin: auto;
+    text-align: center;
+}
+
+
+</style>
+
+​<div class="video">
+  <div class="bg-video">
+    <div class="blur-edges"></div>
+    <video class="bg-video__content" autoplay muted loop>
+      <source src="//cdn-cf-east.streamable.com/video/mp4/6l5np1.mp4?Expires=1711225402958&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=mpFviyU7TTroQzGHuueS9~gWJLGTVVD-40DPrFj3ILoMb-kZBVz07s0uX9BUlqvmik6t1MLPvMKdh4XblNGEGB9N1tWVo399LRPXtlA~OEgn~Vvwsbv~weZ8msRA6AfpoZH~oONg3Ho6TtsF3OzHFGSe1RRW9f0si9Kcdtbr4fXn3c1l~flqa-M6SdQ8FOsiZOb9NNBI1KESDPfbuP35d9475laGCqq7JYxrazEqUCIdApBuZ1lngFChkbXbR8Ssk1AYvQGlatmBDdeQAiuhe5DXqKCj5ejKrugy4~ZGZWOkmXrZw5xZtf-wSIVvYgQMdIzpIG~hbdcEaMzyQfFe0A__" type="video/mp4">
+      <source src="//cdn-cf-east.streamable.com/video/mp4/6l5np1.mp4?Expires=1711225402958&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=mpFviyU7TTroQzGHuueS9~gWJLGTVVD-40DPrFj3ILoMb-kZBVz07s0uX9BUlqvmik6t1MLPvMKdh4XblNGEGB9N1tWVo399LRPXtlA~OEgn~Vvwsbv~weZ8msRA6AfpoZH~oONg3Ho6TtsF3OzHFGSe1RRW9f0si9Kcdtbr4fXn3c1l~flqa-M6SdQ8FOsiZOb9NNBI1KESDPfbuP35d9475laGCqq7JYxrazEqUCIdApBuZ1lngFChkbXbR8Ssk1AYvQGlatmBDdeQAiuhe5DXqKCj5ejKrugy4~ZGZWOkmXrZw5xZtf-wSIVvYgQMdIzpIG~hbdcEaMzyQfFe0A__" type="video/webm">
+      <img src="//cdn-cf-east.streamable.com/video/mp4/6l5np1.mp4?Expires=1711225402958&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=mpFviyU7TTroQzGHuueS9~gWJLGTVVD-40DPrFj3ILoMb-kZBVz07s0uX9BUlqvmik6t1MLPvMKdh4XblNGEGB9N1tWVo399LRPXtlA~OEgn~Vvwsbv~weZ8msRA6AfpoZH~oONg3Ho6TtsF3OzHFGSe1RRW9f0si9Kcdtbr4fXn3c1l~flqa-M6SdQ8FOsiZOb9NNBI1KESDPfbuP35d9475laGCqq7JYxrazEqUCIdApBuZ1lngFChkbXbR8Ssk1AYvQGlatmBDdeQAiuhe5DXqKCj5ejKrugy4~ZGZWOkmXrZw5xZtf-wSIVvYgQMdIzpIG~hbdcEaMzyQfFe0A__" alt="Abstract Background">
+    </video>
+  </div>
+  <h1 class="headline">Coosaw Point</h1>
+
+</div>
+
+
+ <section class="hero-section">
+            <div class="hero">
+                <div class="hero-text-box">
+                  <iframe style="max-width:560px;" width="560" height="315" src="https://www.youtube.com/embed/WzjajMehwwg?si=bj7ETpTFxJtvwGva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                  
+                    <h1 class="primary-heading">Welcome To Coosaw Point
+</h1>
+                  
+                    <p class="hero-inf">Nestled in the heart of the South Carolina lowcountry, Coosaw Point has become a beacon for both retirees and young families wanting more out of living. Located on nearly 400 sprawling acres on Lady’s Island, one of the East Coast’s most stunning settings, this luxury-style community embodies coastal living at its finest. 
+  </p>
+                   
+                  
+                  <a href="https://myre.io/0vr8HIpvj1Uo" class="btn btn--on right">Search Homes</a>
+                    
+                  <a href="https://myre.io/0OAsNOyLSTtn" class="btn btn--on right">Search Homesites</a>
+                  
+                
+                </div>
+                <div class="hero-img-box">
+                    <img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1711043641_sRY6r8qhjqfcrNM610LDDDLdHYOuB11GHHZEVXKX.png"
+                        alt="Coosaw Point Homes">
+                </div>
+            </div>
+        </section>
+
+<div class="row one-column">
+  
+<div class="col-sm-12">
+  
+<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1711044216_MboRCiJCnsbJj4Pfmnkaa2Gn38xUKLCOmVtGwQwa.jpg" alt="Coosaw Photo">
+  
+
+<div class="row-column-content" max-width: 750px;margin:auto>
+ 
+  <h3 class="fw-600"> About Coosaw Point </h3>
+
+ <div class="abouttext">
+  Whether you are looking for a beautiful move-in ready home, or a pristine homesite to build your very own dream house, a quick visit to Coosaw Point will confirm you are in the right place. Situated just close enough to the energy of Savannah and Charleston, 50 minutes to the Savannah Airport, and only ten minutes from the charm of downtown historic Beaufort, Coosaw Point offers residents the convenience and ease of both worlds all while living in a marshside retreat. 
+
+<br><br>
+Throughout the neighborhood, you’ll find gorgeous Lowcountry homes overlooking spacious green lawns and tall live oak trees cascading with Spanish moss. Designated walking paths dot the island, leading to the river with places to sit and enjoy the saltwater marsh and wildlife. With plenty of elbow room between neighbors, residents love that Coosaw Point is a golf cart community. They often spend the afternoons taking in the picturesque streetscapes and manicured open green spaces while still feeling immersed in an unmatched sense of community.
+
+<br><br>
+
+ Coosaw Point offers an impressive 11,000 square foot River Club with panoramic views of Saint Helena Sound. From sunup to sun down, the riverfront veranda is the ideal spot to watch the sunrise over the Atlantic Ocean or marvel at the spectacular sunset from one of the many rocking chairs or seating areas. A large recreation room located on the first floor is the perfect setting for informal, private or community events. Alternatively, the second floor has been designed for more formal activities, including property owners’ parties or catered events, as it features a professional caterer’s kitchen. Finally, the River Club offers a spacious porch overlooking the resort-style junior olympic outdoor swimming pool, as well as a playful children’s water feature, accented with shady pergolas and piped-in soothing music. 
+   
+   <br><br>
+
+   From the fitness center to the children's playground, living an active, healthy lifestyle is easy at Coosaw Point. The lighted tennis and pickleball courts are centrally located just across the main interior park, with lessons available for residents. Additionally, open natural areas and walking trails make the neighborhood perfect for you and your furry friends.
+
+
+   
+   <br><br>
+If a sense of community is what you seek, Coosaw Point is the place for you. The Coosaw Point social committee is very active, coordinating monthly events such as water aerobics, family barbecues, oyster roasts, pool parties and holiday celebrations. In addition to the community dock, a lakeside pavilion featuring an outdoor fireplace offers an ideal place to gather amongst friends and family. Residents also enjoy using the neighborhood's famous “Crab Shack” for community events, family crab roasts, peel-and-eat shrimp nights and more.
+   
+   <br><br>
+
+    <a href="https://www.google.com/maps/place/20+The+Horseshoe,+Beaufort,+SC+29907/@32.491847,-80.6178342,17z/data=!4m6!3m5!1s0x88fc11c9363ab721:0x3f91fe269846c012!8m2!3d32.4956838!4d-80.6155631!16s%2Fg%2F11g4g44_w0?entry=ttu" class="btn btn--on right">Google Map</a>
+  </div>
+</div>
+</div>
+</div>
+  
+<!-- Community Features -->
+
+
+ <section class="hero-section">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="primary-heading">Community Map & Features
+</h1>
+                    <p class="hero-inf">
+                 Welcome to Coosaw Point, where vibrant living meets modern convenience. Our community map offers a comprehensive guide to the features and build requirements of each plot, ensuring that every resident can create their dream home in this thriving neighborhood. Below, are some of the features you can find at Coosaw Point.
+                  <ul style="list-style-type: circle; font-size:1.2em;"> 
+                  
+<li> 11,000 sq ft Grand Clubhouse Located on the ICW </li>
+<li> Boat Basin with Dock on the ICW </li>
+<li> Boat Storage & Kayak Stands </li>
+<li> Lighted Tennis Courts </li>
+<li> Children’s Playground & Dog Park </li>
+<li> Walking Trails </li>
+<li> Lighted Street Corners</li>
+<li> Fitness Center with Men’s and Women’s Showers</li>
+<li> 100 Acres Common Area Open Space</li>
+<li> Resort Style Adult Pool with Separate Toddler Pool Complex</li>
+<li> Beautiful Live Oaks & Spanish Moss</li>
+<li> Many Community Events and Dinners</li>
+<li> “Crab Shack” for Casual & Family Events</li>
+   
+   </ul>
+  </p>
+
+                
+                    <a href="https://kvcore-library.s3.amazonaws.com/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1e5509339bba6628a30849d307af90b1.pdf" class="btn btn--on right">Download Print Map</a>
+              
+              
+                    <a href="https://drive.google.com/drive/folders/1xzrLbVO0SJF3Edrl2TW9zaOgoIwMn13D?usp=sharing" class="btn btn--on right">View Community Docs</a>
+                  
+                   
+                </div>
+                <div class="hero-img-box">
+                    <img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1711121747_6hpTxizoyuavcIr1RsTpr1V0demEeRxRVgGeYCQH.jpg"
+                        alt="Coosaw Point Homes">
+                </div>
+            </div>
+        </section>
+
+<!-- Top 11 Reasons -->
+ <div class="hero-text-box">
+   
+                    <h1 class="primary-heading2">Top 11 Reasons To Buy A Home In Coosaw Point 
+   </h1>
+     
+ 
+
+<div class="container34">
+<div class="level">
+  <div class="level-name">
+    <h3>1. Ten minutes from Historic Beaufort</h3>
+  </div>
+<p>Enjoy shopping, cultural events, educational opportunities and Beaufort’s well-known waterfront park along with all the many wonderful festivals, events, and parades.<p>
+ 
+  
+  </div>
+<div class="level"> 
+  <div class="level-name">
+  <h3>2. Close to Shopping</h3>
+  </div>
+<p>Downtown Beaufort is located just 10 minutes away. Nearby Hilton Head and Savannah are less than 45 minutes away.</p></div>
+
+  <div class="level">
+    <div class="level-name">
+  <h3>3. Close to Health Care Facilities</h3>
+</div>
+<p>Minutes from Beaufort Memorial Hospital and their medical facilities, including the award-winning heart center and the Keyserling cancer center affiliated with Duke University.
+    </p></div>
+  
+<div class="level">
+  <div class="level-name">
+    <h3>4. Savannah Airport Nearby</h3> </div>
+<p>Savannah Hilton Head International airport is located just 45 minutes away from downtown Beaufort.</p></div>
+  
+<div class="level"> 
+  <div class="level-name">
+    <h3>5. On the Intracoastal Waterway</h3> </div>
+<p>Located on the Intracoastal waterway and the St Helena Sound. Just 20 minutes from downtown Beaufort by water.
+  </p></div>
+<div class="level"> 
+  <div class="level-name">
+    <h3>6. University Facilities</h3> </div>
+<p> Enjoy the many advantages and opportunities associated with living near a university. USC offers a wide spectrum of programs—something for every age student.</p></div>
+  
+  <div class="level">
+  <div class="level-name">
+    <h3>7. Debt Free Community</h3>
+  </div>
+In today’s economic climate few communities can boast the same financial security and sustainability that comes with being debt-free.
+
+  </div>
+<div class="level"> 
+<div class="level-name">
+<h3>8. Voted Happiest Community</h3>
+  </div>
+<p>Real Estate Scorecard awarded Coosaw Point "Happiest Community of the Year" in 2013. Beaufort has also been voted "Happiest Coastal Community" by Coastal Living.
+  
+  </p></div>
+  
+<div class="level"> 
+  <div class="level-name">
+    <h3>9. Lowcountry Architecture</h3> </div>
+<p>Attention to detail, workmanship, and simple design all add up to create a living space that is a southern classic. High ceiling, lots of windows and wide porches are just a few of the defining elements seen in Coosaw Point.</p></div>
+<div class="level">
+<div class="level-name">
+  <h3>10. Close to Beaches</h3> </div>
+<p>Located just 12 miles from SC’S oceanfront Hunting Island State Park. Beaufort’s own oceanfront playground, and SC’s most visited state park.</p></div>
+  
+<div class="level">
+<div class="level-name">
+  <h3>11. Sportsman’s Paradise</h3> </div>
+  
+ <p>Coastal South Carolina is the premier destination for the avid sportsman and angler. Not just next to nature but a part of it.</p></div>
+
+</div>
+
+
+<!-- Top 11 Reasons End -->
+
+<div class="row one-column">
+<div class="col-sm-123">
+<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1711048414_sD9bU4DQs8hZr34aQDNGlno8EFVap0InhrNxk2Bn.jpg" alt="Coosaw Dock">
+
+  <div class="row-column-content" max-width: 750px;margin:auto>
+      <h3 class="fw-600"> Community Events </h3>
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%23ffffff&showTitle=0&showTabs=0&showPrint=0&showCalendars=0&title=Coosaw&src=Y29vc2F3cG9pbnRwb2FAZ21haWwuY29t&color=%23009688" style="border-width:0; max-width:800px;" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    
+
+
+</div>
+</div>
+</div>
+
+
+                    <!-- ***** FAQ Section ***** -->
+
+<section class="faq-section">
+<div class="container22">
+  <div class="row">
+                    <!-- ***** FAQ Start ***** -->
+                    <div class="col-md-6 offset-md-3">
+                        <div class="faq-title text-center pb-3">
+                            <h2>FAQ</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-3">
+                        <div class="faq" id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="faqHeading-1">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                          Where is Coosaw Point located?
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Coosaw Point is a primary home community located on nearly 400 acres on Lady’s Island only 10 minutes from historic Beaufort, SC. With almost 130 acres remaining as open space, much of it along the riverfront, Coosaw Point is home for families who want more out of living! Nestled on the edge of the ACE Basin, Coosaw Point, is surrounded by wetlands and marshes formed by the Ashepoo, The Combahee and the Edisto Rivers all supporting a cornucopia of Lowcountry wildlife.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqHeading-2">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                                   What Kind Of Amenities Are Available At Coosaw Point?
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Coosaw Point offers:
+<ul>
+  <li> 11,000 sqft grand clubhouse located on the ICW </li>
+ <li>  Boat Basin with dock on the ICW </li>
+  <li> Boat storage & kayak stands</li>
+ <li>  Lighted tennis courts</li>
+ <li>  Children's playground & dog park</li>
+ <li>  Walking trails</li>
+ <li>  Lighted street corners</li>
+ <li>  Fitness center with mens and womens showers</li>
+ <li>  100 acres common area open space</li>
+  <li> Resort style adult pool with separate toddler pool complex</li>
+  <li> Beautiful Live Oaks & Spanish Moss</li>
+ <li>  Many community events and dinners</li>
+  <li> "Crab Shack" for casual & family events</li>
+ <li>  Lowcountry architecture throughout community</li> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqHeading-3">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                          Are there fees for the Homeowners Association?
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                                    <div class="card-body">
+                  <p>Coosaw Point Owner Association - $2,750 per year (Homesite or Home)
+This annual fee represents maintenance and landscaping of the community's common areas, roads, walkways, parks and all club amenities</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqHeading-4">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                                           Are there additional fees?
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Coosaw Point has a one time capital contribution fee of $3500 paid by the buyer. It's intended to be used for future capital improvements in the community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqHeading-5">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                                   What do property taxes look like in Beaufort County?
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p> The Beaufort County assessor places an appraised value on real estate based on comparable sales, conditions, etc.
+<br>
+This appraised value is multiplied by a factor of 4% for residents and 6% for non-residents and corporations to obtain the assessed value. The assessed value is multiplied by Lady’s Island district’s mileage rate to calculate property taxes.
+<br>
+
+<b>Example: A home assessed at $500,000 for a resident would equate to $3,986.80 property tax ($500,000 x .04 x .19934).</b>
+<br>
+
+Note: Primary residents can apply for a special exemption from property taxes imposed for school operating purposes. This reduced the 4% tax basis by an average of 25% minimum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqHeading-6">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                                     How much is homeowner's insurance for Coosaw Point?
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Estimated insurance costs per $100,000 of structure value:
+<br>
+Hazard/Wind & Hail $600 per $100,000 of structure value
+<br>
+Flood $200 per $100,000 of structure value</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqHeading-7">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                            What are typical prices for utilities in Coosaw Point?
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p> Estimated Utilities (for an average 3 bedroom home)
+<br>
+Electric (SCE&G): $130 per month
+<br>
+Water & Sewer (BJWSA): $70 per month
+<br>
+Telephone (Century Link, Landline) $35 per month
+<br>
+Cable TV/Satellite (Comcast) $45 per month
+<br>
+Trash Service (Waste Management) $30 per month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </section>
+
+
+<!-- Image Grid -->
+
+<div class="grid-wrapper">
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590089_7de6c6LQUrJWqdigfNZDVpqUuh315ueugD5cvDWL.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590292_s8FoOb6Zn4QuzgRfInxaWZ1IYurohVGNBpbUs5Ls.jpg" alt="" />
+	</div>
+	<div class="tall">
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590229_XcqvAKYMcy9EzCX45TfAG3uZOGRDzWgyhFPdkcI8.jpg" alt="">
+	</div>
+	<div class="wide">
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590351_fXs7uH6AdBRMlyUTLWtNLlJ8q0zbHL34g6e8hqzZ.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590436_u9oA7IKLkkkf6sxbJ5ginQeZ0QVfNiBhQV6LVi2S.jpg" alt="" />
+	</div>
+	<div class="tall">
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590665_jmZESg4clxj8Y3AfOR7Dl2G0R3L2F59aR4FC014R.jpg" alt="" />
+	</div>
+	<div class="big">
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590534_8XtlgpbZN1S12IYoGtLCvFbiVCxNa1uklyBui3TH.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590722_Pw5FE1tDra2cYl0MWVqjLBdvq5968vX9dLW1qYkJ.jpg" alt="" />
+	</div>
+	<div class="wide">
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590767_Ufd9CakwOX4itrWYYwHVArbQrvJerKWDyoV5GHgH.jpg" alt="" />
+	</div>
+	<div class="big">
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590177_xzAKUSGEUqoBZ3y8xuNuNWSDbWSEQh7L1g3DFMOK.jpg" alt="" />
+	</div>
+	<div class="tall">
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590808_0kt3Nq0i9cfqWR2GEgcD6LiQlwWp3mhVuc0nmLxL.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712592358_M4WVtWjwstertboHutEV5O4DYt5QbMJPGApghZXv.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712590808_0kt3Nq0i9cfqWR2GEgcD6LiQlwWp3mhVuc0nmLxL.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712592669_ipRBQOIRvqzpcU5ZAntox5rAZlRMb3YNJn6jGjLR.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712592847_KAZRL9GpHCSzFHbB9MynjBRxRg6GgqibsdqCAjS6.jpg" alt="" />
+	</div>
+	<div class="wide">
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712592933_NxdeNVZUEY0nVfMq1qBH38q2DMDsbLoFO8ZpIfWQ.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712593293_XbErcnLkb1SzNH52hWx6O7sAxuXwCSBOmiTt97nL.jpg" alt="" />
+	</div>
+	<div>
+		<img src="https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesbaystreetrealtygroup8749/images/1712593456_bBlyWxubY6iRqXyaeEcaGzqxpUZB222RsB5ETX8O.jpg" alt="" />
+	</div>
+
+</div>
